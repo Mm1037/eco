@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+
+<body>
+
+    <!-- ---------------------------------------------------- -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var aboutBtn = document.getElementById('aboutbtn');
+            var gameBtn = document.getElementById('gamebtn');
+            var competitionBtn = document.getElementById('competitionbtn');
+            var contactBtn = document.getElementById('cont');
+
+
+
+            gameBtn.addEventListener('click', function () {
+                window.location.href = 'Game.html';
+
+
+            });
+
+            aboutBtn.addEventListener('click', function () {
+                window.location.href = 'About.html';
+
+
+            });
+
+            competitionbtn.addEventListener('click', function () {
+                window.location.href = 'compatation.html';
+
+
+            });
+
+            cont.addEventListener('click', function () {
+                window.location.href = 'contact.html';
+
+
+            });
+
+
+        });
+    </script>
+    <!-- it's not compelete because not all the pages are done -->
+
+    <header>
+        <div class="logo">
+            <img src="Media/Screenshot 2024-02-28 004330.png" alt="Company Logo">
+        </div>
+
+
+        <nav>
+            <div class="navbar">
+                <button class="nav-button" id="aboutbtn">
+                    <div class="txt">
+                        About
+                    </div>
+                    <span class="circle">
+                        <div class="icon">
+                            <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\psychology_alt_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="">
+                        </div>
+                    </span>
+                </button>
+
+
+                <button class="nav-button" id="gamebtn">
+                    <div class="txt">
+                        Game
+                    </div>
+                    <span class="circle">
+                        <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\stadia_controller_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="">
+                    </span>
+                </button>
+
+                <button class="nav-button">
+                    <div class="txt" id="competitionbtn">
+                        compatattion
+                    </div>
+                    <span class="circle">
+                        <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\emoji_events_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="">
+                    </span>
+                </button>
+
+
+                <button class="nav-button" id="cont">
+                    <div class="txt1">
+                        contact us
+                    </div>
+
+                </button>
+            </div>
+        </nav>
+        <div class="menu">
+            <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+        </div>
+    </header>
+
+    <div class="form">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        <label for="Email">Email</label>
+        <br>
+        <input type="text" id="Email">
+        <br>
+        <label for="feedbak">Feedback</label>
+        <br>
+        <input type="text" id="feedback">
+
+
+    </div>
+
+    <img src="Media/3d-rendering-ecosystem.jpg" alt="Ecosystem Image" id="E-img">

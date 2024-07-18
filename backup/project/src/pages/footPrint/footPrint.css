@@ -1,0 +1,186 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+@font-face {
+    font-family: "..";
+    src: url("media/fonts/FrancoisOne-Regular.ttf");
+
+}
+
+body {
+    font-family: "..";
+    border-radius: 100px
+}
+
+header {
+    display: flex;
+
+    align-items: center;
+    color: #000000;
+    font-weight: bolder;
+
+}
+
+.logo img {
+    max-width: 160px;
+    height: auto;
+}
+
+.menu {
+    margin-left: 380px;
+    /* This will push the menu icon to the right */
+}
+
+.menu img {
+    width: 30px;
+    /* Adjust the width and height as needed */
+    height: 30px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-button {
+    position: relative;
+    background-color: #e5e2e2;
+    /* Change this to your desired button color */
+    border-style: groove;
+    border-color: #000000;
+    border-width: 1px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 170px;
+    margin: 18px;
+    font-family: "..";
+    src: url("media/fonts/FrancoisOne-Regular.ttf");
+    transition: all 0.3s ease;
+    left: 20%;
+}
+
+.nav-button:hover {
+    transform: translateY(-5px);
+    /* Add hover effect */
+}
+
+.txt {
+    position: relative;
+    left: 15px;
+}
+
+#cont {
+    position: relative;
+    left: 50%;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.txt1 {
+    position: relative;
+    right: -2px;
+}
+
+
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    /* Adjust this value to move the circle horizontally */
+    transform: translateY(-50%);
+    width: 50px;
+    /* Adjust the width and height to change the size of the circle */
+    height: 30px;
+    background-color: green;
+    /* Change this to your desired circle color */
+    border-radius: 20px;
+
+}
+
+.circle img {
+    width: 20px;
+    height: 20px;
+    color: white;
+    position: relative;
+    top: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.circle:hover img {
+    animation: teeter 0.5s infinite;
+    /* Add teeter animation on hover */
+}
+
+@keyframes teeter {
+    0% {
+        transform: rotateZ(-20deg);
+        /* Start by tilting left */
+    }
+
+    50% {
+        transform: rotateZ(20deg);
+        /* Tilt right halfway through */
+    }
+
+    100% {
+        transform: rotateZ(-20deg);
+        /* Return to initial tilt */
+    }
+
+    100% {
+        transform: rotateZ(-20deg);
+        /* Return to initial tilt */
+    }
+}
+
+
+
+
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #b8b8b8;
+    border-radius: 15px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

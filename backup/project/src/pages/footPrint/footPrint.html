@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint</title>
+    <link rel="stylesheet" href="footPrint.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Media/Screenshot 2024-02-28 004330.png" alt="Company Logo">
+        </div>
+
+
+        <nav>
+            <div class="navbar">
+                <button class="nav-button">
+                    <div class="txt">
+                        About
+                    </div>
+                    <span class="circle">
+                        <div class="icon">
+                            <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\psychology_alt_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="">
+                        </div>
+                    </span>
+                </button>
+
+                <button class="nav-button">
+                    <div class="txt">
+                        Game
+                    </div>
+                    <span class="circle">
+                        <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\stadia_controller_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="">
+                    </span>
+                </button>
+
+                <button class="nav-button">
+                    <div class="txt">
+                        competition
+                    </div>
+                    <span class="circle">
+                        <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\emoji_events_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="">
+                    </span>
+                </button>
+
+
+                <button class="nav-button" id="cont">
+                    <div class="txt1">
+                        contact us
+                    </div>
+
+                </button>
+            </div>
+        </nav>
+        <div class="menu">
+            <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Carbon Footprint</h1>
+        <p>Welcome to the Carbon Footprint page! Here you can track and analyze your personal carbon footprint and work
+            on
+            reducing it to protect the environment.</p>
+    </section>
+
+    <section class="content">
+        <h2>Calculate Your Carbon Footprint</h2>
+        <form action="calculate.php" method="post">
+            <div class="form-group">
+                <label for="electricity-usage">Electricity Usage (kWh/year):</label>
+                <input type="number" id="electricity-usage" name="electricity-usage" placeholder="kWh" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="transportation">Transportation (km/year):</label>
+                <input type="number" id="transportation" name="transportation" placeholder="km" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="food-consumption">Food Consumption (kg/year):</label>
+                <input type="number" id="food-consumption" name="food-consumption" placeholder="kg" min="0" required>
+            </div>
+            <button type="submit">Calculate Carbon Footprint</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>All rights reserved &copy; 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

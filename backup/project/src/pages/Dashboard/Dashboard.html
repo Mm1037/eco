@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Name</title>
+    <link rel="stylesheet" href="Dashboard.css">
+
+    <head>
+        <!-- Other meta tags and stylesheets -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Media/Screenshot 2024-02-28 004330.png" alt="Company Logo">
+        </div>
+
+
+        <nav>
+            <div class="navbar">
+                <button class="nav-button">
+                    <div class="txt">
+                        About
+                    </div>
+                    <span class="circle">
+                        <div class="icon">
+                            <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\psychology_alt_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="">
+                        </div>
+                    </span>
+                </button>
+
+                <button class="nav-button">
+                    <div class="txt">
+                        Game
+                    </div>
+                    <span class="circle">
+                        <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\stadia_controller_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="">
+                    </span>
+                </button>
+
+                <button class="nav-button">
+                    <div class="txt">
+                        compatattion
+                    </div>
+                    <span class="circle">
+                        <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\emoji_events_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="">
+                    </span>
+                </button>
+
+
+                <button class="nav-button" id="cont">
+                    <div class="txt1">
+                        contact us
+                    </div>
+
+                </button>
+            </div>
+        </nav>
+        <div class="menu">
+            <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+        </div>
+    </header>
+    <div class="container">
+        <section id="about">
+            <div class="school-info">
+                <div class="school-photo">
+                    <img src="C:\Users\Mo3az\Desktop\Envo\codeing\Media\download.png" alt="School Photo">
+                </div>
+                <div class="school-bio">
+                    <h3>School Name</h3>
+                    <p>
+                        Add a brief overview of the school's history, mission, and values here.
+                        You can provide information about the school's founding, its educational philosophy,
+                        notable achievements, and any unique programs or initiatives it offers.
+                    </p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+    </div>
+
+    <section id="progress">
+        <h2>Progress & Achievements</h2>
+        <div class="progress-info">
+            <div class="progress-graph">
+                <canvas id="progressChart"></canvas>
+            </div>
+            <!-- Other progress-related content -->
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Data for the chart (replace with actual data)
+            var chartData = {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Progress',
+                    data: [65, 75, 80, 85, 90, 95], // Sample data for academic progress
+                    borderColor: 'Green', // Border color for the line
+                    borderWidth: 2, // Border width
+                    fill: false // Don't fill the area under the line
+                }]
+            };
+
+            // Configuration options for the chart
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true // Start the y-axis at zero
+                    }
+                }
+            };
+
+            // Get the canvas element
+            var progressCanvas = document.getElementById('progressChart').getContext('2d');
+
+            // Create the chart
+            var progressChart = new Chart(progressCanvas, {
+                type: 'line', // Specify the chart type
+                data: chartData, // Pass the data
+                options: chartOptions // Pass the options
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
